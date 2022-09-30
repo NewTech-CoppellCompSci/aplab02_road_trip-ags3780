@@ -32,33 +32,40 @@ public class Trip {
 		 * All variables should be initialized accordingly
 		 */
 		RoadTripLog trip = new RoadTripLog("Maryland 2022");
-		
+
+		//add distance and fuel to it
 		trip.addDistance(358.4);
 		trip.addFuel(18.4);
-		
+
+		//print the first stops info
 		System.out.println("Stop #1");
 		System.out.println("   " + trip.getTotalDistance());
 		System.out.println("   " + trip.getTotalFuel());
 		System.out.println("   " + trip.getMPG() + "\n");
-		
-		
+
+
+		//add distance and fuel to it
 		trip.addDistance(215.8);
 		trip.addFuel(12.5);
-		
+
+		//print the second stops info
 		System.out.println("Stop #2");
 		System.out.println("   " + trip.getTotalDistance());
 		System.out.println("   " + trip.getTotalFuel());
 		System.out.println("   " + trip.getMPG() + "\n");
-		
+
+		//add more distance and fuel
 		trip.addDistance(312.9);
 		trip.addFuel(16.8);
-		
+
+		//add more distance and fuel
 		trip.addDistance(108.6);
 		trip.addFuel(7.5);
-		
+
 		System.out.println(trip);
-		
+		//print out the final stats
+		System.out.println(trip.printTrip());
+
 	}
-	
 	
 }
